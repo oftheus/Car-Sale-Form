@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Sales Form</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- header -->
+    <div class="header">
+      <h2 class="firstTitle">Register your vehicle to sell faster!</h2>
+    </div>
+    
+    <!-- form -->
+    <form>
+      <div class="form-container">
+        <!-- form header -->
+        <div class="form-header">
+          <p class="form">FORM</p>
+        </div>
+        
+        <!-- form-body -->
+        <div class="form-body">
+          <h1 class="formTitle">Sell ​​your car easily!</h1>
+          <p>Describe the characteristics and mark the additional features it has.</p>
+        </div>
+
+        <div class="box-input">
+          <!-- Ad Title -->
+          <div class="default">
+            <label for="adTitle">Ad title: <span class="required-field">*</span> </label>
+            <input type="text" name="adTitle" placeholder="A title to advertise your car" minlength="1" maxlength="30" required>
+          </div>
+    
+          <!-- Car Price -->
+          <div class="default">
+            <label for="price">Price: <span class="required-field">*</span></label>
+            <input type="number" name="price" placeholder="Set the price" required>
+          </div>
+    
+          <!-- Car Description -->
+          <div class="default">
+            <label for="description">Description: <span class="required-field">*</span></label>
+            <textarea name="description" id="" cols="52" rows="5" required placeholder="Here you must enter the vehicle details. For example, if it has any scratches."></textarea>
+          </div>
+    
+          <!-- Car Brand -->
+          <div class="default">
+            <label for="brand">Brand: <span class="required-field">*</span></label>
+            <input type="text" name="brand" required placeholder="Enter the vehicle brand">
+          </div>
+    
+          <!-- Car Model -->
+          <div class="default">
+            <label for="model">Model: <span class="required-field">*</span></label>
+            <input type="text" name="model" required placeholder="Enter the vehicle model">
+          </div>
+    
+          <!-- Number of kilometers: -->
+          <div class="default">
+            <label for="km">Number of kilometers: <span class="required-field">*</span></label>
+            <input type="number" name="km" required placeholder="Enter the number of kilometers">
+          </div>
+    
+          <!-- Purchase date -->
+          <div class="default">
+            <label for="date">Purchase date: <span class="required-field">*</span></label>
+            <input type="date" name="date" required placeholder="mm/dd/yyyy">
+          </div>
+    
+          <!-- Type of car gearbox -->
+          <div>
+            <label for="gearbox">Type of car gearbox: <span class="required-field">*</span></label>
+            <div class="radio">
+              <input type="radio" name="gearbox" value="manual" required>
+              <label for="manual">Manual</label>
+            </div>
+            <div class="radio">
+              <input type="radio" name="gearbox" value="automatic" required>
+              <label for="automatic">Automatic</label>
+            </div>
+          </div>
+    
+          <!-- Optional-->
+          <div class="opt">
+            <p>Optionals:</p>
+    
+            <!-- Optional left -->
+            <div class="leftopt">
+              <!-- Airbag -->
+              <div>
+                <input type="checkbox" name="optional[]" value="airbag">
+                <label for="airbag">Airbag</label>
+              </div>
+      
+              <!-- Alarm -->
+              <div>
+                <input type="checkbox" name="optional[]" value="alarm">
+                <label for="alarm">Alarm</label>
+              </div>
+      
+              <!-- Air conditioning -->
+              <div>
+                <input type="checkbox" name="optional[]" value="ac">
+                <label for="ac">Air conditioning</label>
+              </div>
+      
+              <!-- Reverse camera -->
+              <div>
+                <input type="checkbox" name="optional[]" value="camera">
+                <label for="camera">Reverse camera</label>
+              </div>
+            </div>
+
+            <div class="rightopt">
+              <!-- Track Assistant -->
+              <div>
+                <input type="checkbox" name="optional[]" value="assistant">
+                <label for="assistant">Track Assistant</label>
+              </div>
+      
+              <!-- Keyless System -->
+              <div>
+                <input type="checkbox" name="optional[]" value="key">
+                <label for="key">Keyless System</label>
+              </div>
+      
+              <!-- Leather seat -->
+              <div>
+                <input type="checkbox" name="optional[]" value="seat">
+                <label for="seat">Leather seat</label>
+              </div>
+      
+              <!-- Carbon Details -->
+              <div>
+                <input type="checkbox" name="optional[]" value="carbon">
+                <label for="carbon">Carbon Details</label>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Car photos -->
+          <div class="default">
+            <label for="photos">Car photos: <span class="required-field">*</span></label>
+            <input type="file" multiple accept="image/png, image/jpg" name="photos" required>
+          </div>
+    
+          <!-- Register button -->
+          <div>
+            <input type="submit" name="register" value="Register" class="button">
+          </div>
+        </div>      
+      </div>
+    </form>
+  </div>
+</body>
+</html>

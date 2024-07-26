@@ -1,0 +1,114 @@
+/* reset */
+*{
+  margin:0;
+  padding:0;
+  font-family: Helvetica;
+}
+
+body{
+  background-color: #D8C1EB;
+}
+
+.header{
+  background-color: #673AB7;
+  height: 160px;
+  padding: 20px;
+}
+
+.form-container{
+  position: relative;
+  background-color: #FFF;
+  width:70%;
+  margin: 0 auto;
+  top: -62px;
+}
+
+.box-input{
+  padding: 0 30px 30px 30px;
+}
+
+.firstTitle{
+  color: #FFF;
+  padding: 20px;
+  margin: 0px;
+}
+
+.form{
+  color:#652F90;
+  border-bottom: 2px solid #652F90;
+  width: 100px;
+  padding:10px 0px 10px 0px;
+  text-align: center;
+  margin: 0 auto;
+  height: 25px;
+  line-height: 25px;
+}
+
+.form-header{
+  border-bottom: 1px solid #CCC;
+}
+
+.formTitle{
+  padding:30px 0 30px 0;
+}
+
+.form-body{
+  padding: 0 30px;
+}
+
+.default{
+  label, input{
+    display: block;
+  }
+  margin:30px 0px 30px 0px;
+}
+
+.required-field{
+  font-weight: bold;
+  color:#FF0000;
+}
+
+input{
+  border:none;
+  border-bottom: 1px solid #CCC;
+  padding: 10px 0;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="file"]{
+  width: 400px;
+}
+
+.radio{
+  display:inline-block
+}
+
+.opt{
+  padding:30px 0 0 0;
+  p{
+    margin: 15px 0px;
+  }
+}
+
+.leftopt, .rightopt{
+  display: inline-block;
+  margin-right:30px;
+}
+
+.button{
+  background-color: #652F90;
+  color:#FFF;
+  text-transform: uppercase;
+  padding: 20px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.button:hover{
+  background-color: #FFF;
+  color:#652F90;
+  border-color: #652F90;
+}
